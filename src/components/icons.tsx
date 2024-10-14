@@ -251,19 +251,6 @@ export const NodejsIcon = (props: SVGProps<SVGSVGElement>) => (
 
 export const NextjsIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg fill="none" height="3em" viewBox="0 0 180 180" width="3em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <mask
-      height={180}
-      id="mask0_408_139"
-      maskUnits="userSpaceOnUse"
-      style={{
-        maskType: 'alpha'
-      }}
-      width={180}
-      x={0}
-      y={0}
-    >
-      <circle cx={90} cy={90} fill="black" r={90} />
-    </mask>
     <g mask="url(#mask0_408_139)">
       <circle cx={90} cy={90} fill="black" r={87} stroke="white" strokeWidth={6} />
       <path
