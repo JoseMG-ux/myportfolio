@@ -40,7 +40,7 @@ export const My_Stack = {
     { name: 'Node.js', icon: NodejsIcon },
     { name: 'C#', icon: CSharpIcon },
     { name: 'Firebase', icon: FirebaseIcon },
-    { name: 'SqlServer', icon: SQLServerIcon },
+    { name: 'SQL Server', icon: SQLServerIcon },
     { name: 'ExpressJS', icon: ExpressjsIcon }
   ],
   tools: [

@@ -34,31 +34,33 @@ export default function IndexPage() {
             GitHub / JoseMG-UX
           </Link>
         </div>
-        <div className="flex gap-3">
-          <div className="flex flex-row justify-center">
-            <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
-              <BusinessCenter fontSize={'medium'} />
-              Experiencia laboral
-            </h2>
+        <div className="container">
+          <div className="flex gap-4">
+            <div className="flex flex-row justify-center">
+              <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
+                <BusinessCenter fontSize={'medium'} />
+                Experiencia laboral
+              </h2>
+            </div>
+          </div>
+          <div className="container mt-4">
+            <CardWorkExperience
+              content_body={
+                <p className="text-medium text-foreground/80">
+                  Actualmente, contribuyo al desarrollo y mejora del sistema de gestión, soporte y administración de Facturación
+                  Electrónica. Integro nuevas funcionalidades y un diseño atractivo para la mejora de la experiencia para los usuarios
+                  actuales. Utilizamos <strong className="underline decoration-pink-500">React</strong> junto con{' '}
+                  <strong className="underline decoration-pink-500">Next</strong> y Typescript para el Frontend, mientras que los servicios{' '}
+                  <strong className="underline decoration-pink-500">API REST</strong> están desarrollados en
+                  <strong className="underline decoration-pink-500"> C# .NET</strong> y alojados en la nube de Microsoft Azure.
+                </p>
+              }
+              content_company={'PanamaPAC Solutions and Services, S.A.'}
+              content_profetion={'Desarrollador Frontend'}
+              content_time={'Julio 2022 - Actualidad'}
+            />
           </div>
         </div>
-        <div className="container">
-          <CardWorkExperience
-            content_body={
-              <p className="text-medium text-foreground/80">
-                Actualmente, contribuyo al desarrollo y mejora del sistema de gestión, soporte y administración de Facturación Electrónica.
-                Integro nuevas funcionalidades y un diseño atractivo para la mejora de la experiencia para los usuarios actuales. Utilizamos
-                React junto con <strong className="underline decoration-pink-500">Next</strong> y Typescript para el Frontend, mientras que
-                los servicios <strong className="underline decoration-pink-500">API REST</strong> están desarrollados en
-                <strong className="underline decoration-pink-500"> C# .NET</strong> y alojados en la nube de Microsoft Azure.
-              </p>
-            }
-            content_company={'PanamaPAC Solutions and Services, S.A.'}
-            content_profetion={'Desarrollador Frontend'}
-            content_time={'Julio 2022 - Actualidad'}
-          />
-        </div>
-
         <div className="flex gap-3">
           <div className="flex flex-row justify-center">
             <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
@@ -67,12 +69,13 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 border-dashed border-white border-2">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
           <CardDevelopmentSkills skillStack={My_Stack.frontend} title={'Frontend'} />
           <CardDevelopmentSkills skillStack={My_Stack.backend} title={'Backend'} />
           <CardDevelopmentSkills skillStack={My_Stack.tools} title={'Herramientas'} />
           <CardDevelopmentSkills skillStack={My_Stack.learning} title={'Aprendiendo'} />
         </div>
+
         <div className="flex gap-3">
           <div className="flex flex-row justify-center">
             <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">

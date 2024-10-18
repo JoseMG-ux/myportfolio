@@ -15,7 +15,7 @@ export const Navbar = () => {
         <NavbarBrand className="gap-3 max-w-fit">
           <Link className="flex justify-start items-center gap-1" color="foreground" href="/">
             <Logo />
-            <p className="font-bold text-inherit">JoseMgz</p>
+            <p className="font-bold text-inherit">Algun titulo</p>
           </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
