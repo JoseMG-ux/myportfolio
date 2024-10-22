@@ -12,9 +12,9 @@ const CardDevelopmentSkills = ({ title, skillStack }: { title: string; skillStac
           <div className=" grid grid-cols-3 gap-12 p-4 m-2">
             {skillStack.map((skill: any, index: number) => (
               <Fragment key={index}>
-                <div className="flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-200 duration-300">
+                <div className="flex flex-col items-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-200 duration-300">
                   <skill.icon size={'3em'} />
-                  <p className="text-small font-semibold text-default-500">{skill.name}</p>
+                  <p className="text-small w-20 text-center font-semibold text-default-500">{skill.name}</p>
                 </div>
               </Fragment>
             ))}
