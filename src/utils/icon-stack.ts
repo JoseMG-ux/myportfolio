@@ -49,8 +49,8 @@ export const My_Stack = {
     { name: 'Illustrator', icon: IllustratorIcon },
     { name: 'NPM', icon: NPMIcon },
     { name: 'PNPM', icon: PnpmIcon },
-    { name: 'VisualStudioCode', icon: VisualStudioCodeIcon },
-    { name: 'VisualStudio', icon: VisualStudioIcon }
+    { name: 'Visual Studio Code', icon: VisualStudioCodeIcon },
+    { name: 'Visual Studio', icon: VisualStudioIcon }
   ],
   learning: [
     { name: 'Docker', icon: DockerIcon },
