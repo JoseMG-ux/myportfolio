@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 
 const AboutMe = ({ content_body }: { content_body: ReactNode }) => {
   return (
-    <Card className="ml-12 border-none bg-background/60 dark:bg-default-100/50 max-w-[80%] shadow-md">
+    <Card className="ml-12 border-none bg-background/60 dark:bg-default-100/50 max-w-[100%] shadow-md">
       <CardBody>
         <div className="grid grid-cols-6 md:grid-cols-8 gap-9 md:gap-4 items-center">
           <div className="flex flex-col col-span-6 md:col-span-8">
