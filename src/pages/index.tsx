@@ -1,6 +1,6 @@
 import { Avatar, Link } from '@nextui-org/react';
 import { button as buttonStyles } from '@nextui-org/theme';
-import { BusinessCenter, SentimentVerySatisfied, IntegrationInstructions } from '@mui/icons-material';
+import { BusinessCenter, SentimentVerySatisfied, Code, MiscellaneousServices } from '@mui/icons-material';
 
 import { siteConfig } from '@/config/site';
 import { subtitle, title } from '@/components/primitives';
@@ -8,6 +8,7 @@ import { GithubIcon, LinkedInIcon } from '@/components/icons';
 import DefaultLayout from '@/layouts/default';
 import CardWorkExperience from '@/components/card-work-experience';
 import CardDevelopmentSkills from '@/components/card-development-skills';
+import CardProjects from '@/components/card-projects';
 import AboutMe from '@/components/about-me';
 import { My_Stack } from '@/utils/icon-stack';
 
@@ -88,15 +89,39 @@ export default function IndexPage() {
           </div>
         </div>
         <div className="container mt-12">
+          <div className="flex gap-4">
+            <div className="flex flex-row justify-center">
+              <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
+                <Code fontSize={'medium'} />
+                Proyectos
+              </h2>
+            </div>
+          </div>
+          <div className="container mt-4">
+            <CardProjects
+              content_body={
+                <p className="text-medium text-foreground/80">
+                  Junto con mi equipo desarrollamos un sistema completo para la administración y soporte de facturas electrónicas, que
+                  permitió mejorar la eficiencia en la gestión de documentos fiscales y el soporte al cliente. La aplicación incluye una
+                  interfaz intuitiva hecha con <strong className="text-cyan-400">React.js</strong>, <strong>Next.js</strong> y{' '}
+                  <strong className="text-blue-400">TypeScript</strong>
+                  para el Frontend, mientras que el backend fue implementado con servicios en C# y desplegado en Azure para garantizar
+                  escalabilidad y alta disponibilidad.
+                </p>
+              }
+            />
+          </div>
+        </div>
+        <div className="container mt-12">
           <div className="flex">
             <div className="flex flex-row justify-center">
               <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
-                <IntegrationInstructions fontSize={'medium'} />
+                <MiscellaneousServices fontSize={'medium'} />
                 Habilidades
               </h2>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 mt-12">
             <CardDevelopmentSkills skillStack={My_Stack.frontend} title={'Frontend'} />
             <CardDevelopmentSkills skillStack={My_Stack.backend} title={'Backend'} />
             <CardDevelopmentSkills skillStack={My_Stack.tools} title={'Herramientas'} />
