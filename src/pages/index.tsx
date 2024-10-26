@@ -9,6 +9,7 @@ import DefaultLayout from '@/layouts/default';
 import CardWorkExperience from '@/components/card-work-experience';
 import CardDevelopmentSkills from '@/components/card-development-skills';
 import CardProjects from '@/components/card-projects';
+import ContactMe from '@/components/contact-me';
 import AboutMe from '@/components/about-me';
 import { My_Stack } from '@/utils/icon-stack';
 
@@ -23,7 +24,9 @@ export default function IndexPage() {
           <span className={title()}>Hola,&nbsp;</span>
           <span className={title()}>soy José Moreno Gómez</span>
           <br />
-          <span className={title({ color: 'violet', fontStyle: 'italic', weight: 'bold' })}>Desarrollador Frontend</span>
+          <span className={`${title({ color: 'violet', fontStyle: 'italic', weight: 'bold', class: 'pr-1' })}`}>
+            Desarrollador Frontend
+          </span>
           <div className={subtitle({ class: 'mt-4' })}>JavaScript, TypeScript, React</div>
         </div>
         <div className="flex gap-3 mb-14">
@@ -104,7 +107,7 @@ export default function IndexPage() {
                   Junto con mi equipo desarrollamos un sistema completo para la administración y soporte de facturas electrónicas, que
                   permitió mejorar la eficiencia en la gestión de documentos fiscales y el soporte al cliente. La aplicación incluye una
                   interfaz intuitiva hecha con <strong className="text-cyan-400">React.js</strong>, <strong>Next.js</strong> y{' '}
-                  <strong className="text-blue-400">TypeScript</strong>
+                  <strong className="text-blue-400">TypeScript </strong>
                   para el Frontend, mientras que el backend fue implementado con servicios en C# y desplegado en Azure para garantizar
                   escalabilidad y alta disponibilidad.
                 </p>
@@ -126,6 +129,16 @@ export default function IndexPage() {
             <CardDevelopmentSkills skillStack={My_Stack.backend} title={'Backend'} />
             <CardDevelopmentSkills skillStack={My_Stack.tools} title={'Herramientas'} />
             <CardDevelopmentSkills skillStack={My_Stack.learning} title={'Aprendiendo'} />
+          </div>
+        </div>
+        <div className="container mt-12 ">
+          <div className="flex items-center justify-center">
+            <div className="flex flex-row">
+              <h2 className="flex items-center items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">Contactame</h2>
+            </div>
+          </div>
+          <div className="container mt-4">
+            <ContactMe />
           </div>
         </div>
       </section>
