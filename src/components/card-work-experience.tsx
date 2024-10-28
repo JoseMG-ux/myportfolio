@@ -14,7 +14,7 @@ const CardWorkExperience = ({
 }) => {
   return (
     <>
-      <Card className=" ml-12 border-none bg-background/60 dark:bg-default-100/50 max-w-[80%] shadow-lg ">
+      <Card className="ml-12 border-none bg-background/60 dark:bg-default-100/50 max-w-[100%] shadow-md">
         <CardBody>
           <div className="grid grid-cols-6 md:grid-cols-12 gap-9 md:gap-4 items-center">
             <div className="relative col-span-6 md:col-span-4">
@@ -28,9 +28,7 @@ const CardWorkExperience = ({
             </div>
             <div className="flex flex-col col-span-6 md:col-span-8">
               <div className="flex justify-between items-start">
-                <div className="flex flex-col gap-0">
-                  <p className="text-medium text-foreground/80">{content_body}</p>
-                </div>
+                <div className="flex flex-col gap-0">{content_body}</div>
               </div>
             </div>
           </div>
