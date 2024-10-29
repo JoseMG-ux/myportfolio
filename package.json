@@ -1,14 +1,16 @@
 {
   "name": "vite-template",
-  "homepage": "https://josemg-ux.github.io/my-portfolio/",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://josemg-ux.github.io/my-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint -c .eslintrc.json ./src/**/**/*.{ts,tsx} --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
