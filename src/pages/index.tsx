@@ -1,10 +1,5 @@
-import { Avatar, Link } from '@nextui-org/react';
-import { button as buttonStyles } from '@nextui-org/theme';
 import { BusinessCenter, SentimentVerySatisfied, Code, MiscellaneousServices } from '@mui/icons-material';
 
-import { siteConfig } from '@/config/site';
-import { subtitle, title } from '@/components/primitives';
-import { GithubIcon, LinkedInIcon } from '@/components/icons';
 import DefaultLayout from '@/layouts/default';
 import CardWorkExperience from '@/components/card-work-experience';
 import CardDevelopmentSkills from '@/components/card-development-skills';
@@ -12,34 +7,14 @@ import CardProjects from '@/components/card-projects';
 import ContactMe from '@/components/contact-me';
 import AboutMe from '@/components/about-me';
 import { My_Stack } from '@/utils/icon-stack';
+import PersonalData from '@/components/personal-data';
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-left justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-lg text-left justify-center">
-          <div className="flex gap-4 items-center">
-            <Avatar className="w-20 h-20 text-large" src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
-          </div>
-          <span className={title()}>Hola,&nbsp;</span>
-          <span className={title()}>soy José Moreno Gómez</span>
-          <br />
-          <span className={`${title({ color: 'violet', fontStyle: 'italic', weight: 'bold', class: 'pr-1' })}`}>
-            Desarrollador Frontend
-          </span>
-          <div className={subtitle({ class: 'mt-4' })}>JavaScript, TypeScript, React</div>
-        </div>
-        <div className="flex gap-3 mb-14">
-          <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
-            <LinkedInIcon />
-            LinkEdin / Jose Moreno Gomez
-          </Link>
-          <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
-            <GithubIcon size={20} />
-            GitHub / JoseMG-UX
-          </Link>
-        </div>
-        <div className="container">
+        <PersonalData />
+        <div className="container" title="exp-laboral">
           <div className="flex gap-4">
             <div className="flex flex-row justify-center">
               <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
@@ -67,7 +42,7 @@ export default function IndexPage() {
             />
           </div>
         </div>
-        <div className="container mt-12">
+        <div className="container mt-12" title="sobre-mi">
           <div className="flex gap-4">
             <div className="flex flex-row justify-center">
               <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
@@ -91,7 +66,7 @@ export default function IndexPage() {
             />
           </div>
         </div>
-        <div className="container mt-12">
+        <div className="container mt-12" title="proyectos">
           <div className="flex gap-4">
             <div className="flex flex-row justify-center">
               <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
@@ -115,7 +90,7 @@ export default function IndexPage() {
             />
           </div>
         </div>
-        <div className="container mt-12">
+        <div className="container mt-12" title="habilidades">
           <div className="flex">
             <div className="flex flex-row justify-center">
               <h2 className="flex items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">
@@ -131,7 +106,7 @@ export default function IndexPage() {
             <CardDevelopmentSkills skillStack={My_Stack.learning} title={'Aprendiendo'} />
           </div>
         </div>
-        <div className="container mt-12 ">
+        <div className="container mt-12" title="contactame">
           <div className="flex items-center justify-center">
             <div className="flex flex-row">
               <h2 className="flex items-center items-center text-2xl font-bold gap-x-3 text-black/80 dark:text-white">Contactame</h2>
