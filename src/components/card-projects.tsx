@@ -2,18 +2,22 @@ import { ReactNode } from 'react';
 import { Card, CardBody, Image } from '@nextui-org/react';
 import { Box, ImageList, ImageListItem } from '@mui/material';
 
+import img1 from '/assets/images/pac_img1.png';
+import img2 from '/assets/images/pac_img2.png';
+import img3 from '/assets/images/pac_img3.png';
+
 const itemData = [
   {
-    img: '../../public/assets/images/pac_img1.png',
-    title: 'Bed'
+    img: img1,
+    title: 'Image_1'
   },
   {
-    img: '../../public/assets/images/pac_img2.png',
-    title: 'Books'
+    img: img2,
+    title: 'Image_2'
   },
   {
-    img: '../../public/assets/images/pac_img3.png',
-    title: 'Sink'
+    img: img3,
+    title: 'Image_3'
   }
 ];
 
