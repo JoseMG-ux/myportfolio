@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Vite + NextUI',
-  description: 'Make beautiful websites regardless of your design experience.',
+  name: 'Mi portafolio',
+  description: 'José Moreno Gómez / Desarrollador Web',
   navItems: [
     {
       label: 'Home',
@@ -60,10 +60,9 @@ export const siteConfig = {
     }
   ],
   links: {
-    github: 'https://github.com/nextui-org/nextui',
-    twitter: 'https://twitter.com/getnextui',
+    github: 'https://github.com/JoseMG-ux',
+    linkedin: 'https://www.linkedin.com/in/jose-moreno-gomez-5009441a6/',
     docs: 'https://nextui-docs-v2.vercel.app',
-    discord: 'https://discord.gg/9b6yyZKmH4',
     sponsor: 'https://patreon.com/jrgarciadev'
   }
 };
