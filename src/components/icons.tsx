@@ -652,3 +652,50 @@ export const MicrosoftAzureIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+export const DevtoIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height="2em" viewBox="0 0 256 256" width="2em" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path
+      clipRule="evenodd"
+      d="M87.3749 147.217C87.3749 157.436 81.0804 172.918 61.1561 172.886H36V83H61.6874C80.9015 83 87.3641 98.4608 87.3695 108.685L87.3749 147.217ZM62.582 99.8189C64.6856 99.8189 66.7946 100.607 68.8982 102.182C70.9963 103.757 72.0535 106.126 72.0589 109.277V147.114C72.0589 150.27 71.0071 152.633 68.9036 154.209C66.8 155.784 64.691 156.572 62.5874 156.572H53.1268V99.8189H62.582Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
+    <path
+      d="M141.959 99.0529H113.073V119.924H130.731V135.988H113.073V156.854H141.965V172.918H108.253C102.203 173.076 97.1717 168.284 97.0199 162.222V94.2561C96.8735 88.1989 101.661 83.1684 107.706 83.0163H141.965L141.959 99.0529Z"
+      fill="currentColor"
+    />
+    <path
+      d="M198.149 161.684C190.992 178.389 178.17 175.064 172.429 161.684L151.539 83.0217H169.197L185.305 144.8L201.336 83.0217H219L198.149 161.684Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const BitBucketIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height="3em" viewBox="0 0 16 16" width="3em" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path
+      clipRule="evenodd"
+      d="M1.403 2.15A.43.43 0 011.73 2l12.54.002a.43.43 0 01.424.496l-1.81 11.135a.43.43 0 01-.425.36H3.693a.585.585 0 01-.568-.478l-1.82-11.02a.425.425 0 01.098-.345zm5.203 7.814H9.41l.677-3.93H5.859l.747 3.93z"
+      fill="#2684FF"
+      fillRule="evenodd"
+    />
+    <path
+      d="M14.122 6.033H10.1l-.67 3.931H6.604L3.317 13.86c.105.09.238.139.376.14h8.766a.43.43 0 00.425-.36l1.238-7.607z"
+      fill="url(#bitbucket-color-16__paint0_linear_707_135)"
+    />
+    <defs>
+      <linearGradient
+        gradientUnits="userSpaceOnUse"
+        id="bitbucket-color-16__paint0_linear_707_135"
+        x1="11.544"
+        x2="6.918"
+        y1="4.676"
+        y2="11.282"
+      >
+        <stop offset=".18" stopColor="#0052CC" />
+        <stop offset="1" stopColor="#2684FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
