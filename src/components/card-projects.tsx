@@ -32,7 +32,6 @@ const CardProjects = ({ content_body }: { content_body: ReactNode }) => {
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <Image
-                      isZoomed
                       alt={item.title}
                       className="object-cover"
                       loading="lazy"
@@ -58,11 +57,12 @@ const CardProjects = ({ content_body }: { content_body: ReactNode }) => {
               <div className="flex justify-between items-start">
                 <div className="flex flex-col gap-0">{content_body}</div>
               </div>
-              <ul className="list-inside list-disc text-foreground/90 mt-5">
-                <li>Gestión de facturas electrónicas.</li>
+              <h1 className="text-medium font-medium mt-2">Caracteristicas: </h1>
+              <ul className="list-inside list-disc text-foreground/90">
+                <li>Gestión automatizada de facturas electrónicas.</li>
                 <li>Generación automática de reportes.</li>
                 <li>Soporte en tiempo real para resolver incidencias.</li>
-                <li>Despliegue en la nube con Azure, garantizando alta disponibilidad y seguridad.</li>
+                <li>Despliegue en la nube con Azure, garantizando disponibilidad y seguridad.</li>
               </ul>
             </div>
           </div>
