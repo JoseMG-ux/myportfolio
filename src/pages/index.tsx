@@ -40,6 +40,23 @@ export default function IndexPage() {
               content_profetion={'Desarrollador Frontend'}
               content_time={'Julio 2022 - Actualidad'}
             />
+            <CardWorkExperience
+              content_body={
+                <p className="text-medium text-foreground/80">
+                  Formé parte del desarrollo de proyectos web en distintas fases para empresas de diversos sectores, abarcando desde el
+                  desarrollo inicial hasta el mantenimiento. También participé en la implementación de interfaces de usuario utilizando
+                  tecnologías como <strong className="underline decoration-orange-500">HTML</strong>,{' '}
+                  <strong className="underline decoration-cyan-500">CSS</strong> y{' '}
+                  <strong className="underline decoration-yellow-500">JavaScript</strong>, desarrollé servicios API REST utilizando{' '}
+                  <strong className="underline decoration-purple-500">C#</strong> y{' '}
+                  <strong className="underline decoration-purple-500">.NET Core</strong>, y diseñé bases de datos con{' '}
+                  <strong className="underline decoration-red-500">Microsoft SQL Server</strong>.
+                </p>
+              }
+              content_company={'Diprocess.com'}
+              content_profetion={'Desarrollador Júnior'}
+              content_time={'2019 - 2020'}
+            />
           </div>
         </div>
         <div className="container mt-12" title="sobre-mi">
@@ -79,12 +96,12 @@ export default function IndexPage() {
             <CardProjects
               content_body={
                 <p className="text-medium text-foreground/80">
-                  Junto con mi equipo desarrollamos un sistema completo para la administración y soporte de facturas electrónicas, que
-                  permitió mejorar la eficiencia en la gestión de documentos fiscales y el soporte al cliente. La aplicación incluye una
-                  interfaz intuitiva hecha con <strong className="text-cyan-400">React.js</strong>, <strong>Next.js</strong> y{' '}
+                  Junto a mi equipo, implementamos un sistema completo para la administración y soporte de facturas electrónicas,
+                  optimizando significativamente la eficiencia en la gestión de documentos fiscales y el soporte al cliente. La aplicación
+                  incluye una interfaz intuitiva hecha con <strong className="text-cyan-400">React.js</strong>, <strong>Next.js</strong> y{' '}
                   <strong className="text-blue-400">TypeScript </strong>
-                  para el Frontend, mientras que el backend fue implementado con servicios en C# y desplegado en Azure para garantizar
-                  escalabilidad y alta disponibilidad.
+                  para el Frontend, mientras que el backend fue implementado en <strong>C#</strong> utilizando arquitectura por
+                  microservicios y desplegado en Azure, asegurando escalabilidad, alta disponibilidad y seguridad en la nube.
                 </p>
               }
             />
