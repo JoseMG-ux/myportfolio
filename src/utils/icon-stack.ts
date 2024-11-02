@@ -22,7 +22,8 @@ import {
   PythonIcon,
   MicrosoftAzureIcon,
   AngularIcon,
-  MaterialUIIcon
+  MaterialUIIcon,
+  BitBucketIcon
 } from '@/components/icons';
 
 export const My_Stack = {
@@ -46,6 +47,7 @@ export const My_Stack = {
   tools: [
     { name: 'Git', icon: GitIcon },
     { name: 'GitHub', icon: GithubIcon },
+    { name: 'BitBucket', icon: BitBucketIcon },
     { name: 'Illustrator', icon: IllustratorIcon },
     { name: 'NPM', icon: NPMIcon },
     { name: 'PNPM', icon: PnpmIcon },
