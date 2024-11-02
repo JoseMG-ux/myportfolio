@@ -10,7 +10,10 @@ const PersonalData = () => {
     <>
       <div className="inline-block max-lg text-left justify-center">
         <div className="flex gap-4 items-center">
-          <Avatar className="w-20 h-20 text-large" src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+          <Avatar
+            className="w-20 h-20 text-large"
+            src="https://media.licdn.com/dms/image/v2/D4E03AQE-1SY9-SI55w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727794372366?e=1735776000&v=beta&t=zNA5yyFFQqDNxCNwNE-wN_F4ME2MGaVMKeGp_NACXFI"
+          />
         </div>
         <span className={title()}>Hola,&nbsp;</span>
         <span className={title()}>soy José Moreno Gómez</span>
@@ -19,7 +22,7 @@ const PersonalData = () => {
         <div className={subtitle({ class: 'mt-4' })}>JavaScript, TypeScript, React</div>
       </div>
       <div className="flex gap-3 mb-14">
-        <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
+        <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.linkedin}>
           <LinkedInIcon />
           LinkEdin / Jose Moreno Gomez
         </Link>
