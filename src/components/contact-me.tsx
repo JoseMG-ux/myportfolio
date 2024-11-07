@@ -1,4 +1,4 @@
-import { ForwardToInbox, Person, AttachFile, Email } from '@mui/icons-material';
+import { Person, AttachFile, Email, ForwardToInbox } from '@mui/icons-material';
 import {
   Card,
   CardHeader,
@@ -12,27 +12,12 @@ import {
   ModalFooter,
   useDisclosure,
   Input,
-  Textarea
+  Textarea,
+  Link
 } from '@nextui-org/react';
-import { useFormik } from 'formik';
-import axios from 'axios';
 
 const ContactMe = () => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
-  const formik = useFormik({
-    initialValues: {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    },
-    onSubmit: async (request) => {
-      const response = await axios.post('/api/sendMail', request);
-
-      console.log(response);
-    }
-  });
+  const { isOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
@@ -46,7 +31,15 @@ const ContactMe = () => {
           <p> Contáctame para hablar sobre tu proyecto. ¡Hagámosla realidad juntos!</p>
         </CardBody>
         <CardFooter className="items-center justify-center">
-          <Button color="secondary" href="mailto:joseutp14@gmail.com" startContent={<ForwardToInbox />} onPress={onOpen}>
+          <Button
+            as={Link}
+            className="inline-flex items-center justify-center py-2 px-4 md:py-1.5 text-white transition bg-sky-500 border border-sky-500 rounded-full dark:bg-sky-500 dark:text-white focus-visible:ring-sky-600/80 text-lg hover:bg-sky-600 hover:text-white dark:hover:bg-sky-600 dark:hover:text-white group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black hover:scale-105"
+            color="secondary"
+            href="mailto:joseutp14@gmail.com"
+            rel="noreferrer"
+            startContent={<ForwardToInbox />}
+            target="_blank"
+          >
             Contactar
           </Button>
         </CardFooter>
@@ -57,32 +50,50 @@ const ContactMe = () => {
             <>
               <ModalHeader className="flex flex-col gap-1 justify-center text-center">Enviar un mensaje</ModalHeader>
               <ModalBody>
-                <form onSubmit={formik.handleSubmit}>
-                  <Input
-                    endContent={<Person className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
-                    label="Nombre"
-                    placeholder="Introduce tu nombre"
-                    type="text"
-                    variant="bordered"
-                  />
-                  <Input
-                    endContent={<Email className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
-                    label="Correo electrónico"
-                    placeholder="Introduce tu correo"
-                    type="email"
-                    variant="bordered"
-                  />
-                  <Input
-                    endContent={<AttachFile className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
-                    label="Asunto"
-                    type="text"
-                    variant="bordered"
-                  />
-                  <Textarea className="max-w-md" label="Descripción" placeholder="Tu mensaje aqui..." />
-                  <Button color="primary" type="submit">
-                    <strong>Enviar mensaje</strong>
-                  </Button>
-                </form>
+                <Input
+                  endContent={<Person className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
+                  id="name"
+                  label="Nombre"
+                  name="name"
+                  placeholder="Introduce tu nombre"
+                  type="text"
+                  // value={formik.values.name}
+                  variant="bordered"
+                  //onChange={formik.handleChange}
+                />
+                <Input
+                  endContent={<Email className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
+                  id="email"
+                  label="Correo electrónico"
+                  name="email"
+                  placeholder="Introduce tu correo"
+                  type="email"
+                  // value={formik.values.email}
+                  variant="bordered"
+                  //onChange={formik.handleChange}
+                />
+                <Input
+                  endContent={<AttachFile className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />}
+                  id="subject"
+                  label="Asunto"
+                  name="subject"
+                  type="text"
+                  // value={formik.values.subject}
+                  variant="bordered"
+                  //onChange={formik.handleChange}
+                />
+                <Textarea
+                  className="max-w-md"
+                  id="message"
+                  label="Descripción"
+                  name="message"
+                  placeholder="Tu mensaje aqui..."
+                  //value={formik.values.message}
+                  //onChange={formik.handleChange}
+                />
+                <Button color="primary" type="submit">
+                  <strong>Enviar mensaje</strong>
+                </Button>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="flat" onPress={onClose}>
