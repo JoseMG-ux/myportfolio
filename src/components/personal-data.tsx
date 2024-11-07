@@ -1,4 +1,4 @@
-import { Link, Avatar } from '@nextui-org/react';
+import { Link, Avatar, Chip } from '@nextui-org/react';
 import { button as buttonStyles } from '@nextui-org/theme';
 
 import { siteConfig } from '@/config/site';
@@ -14,6 +14,16 @@ const PersonalData = () => {
             className="w-20 h-20 text-large"
             src="https://media.licdn.com/dms/image/v2/D4E03AQE-1SY9-SI55w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727794372366?e=1735776000&v=beta&t=zNA5yyFFQqDNxCNwNE-wN_F4ME2MGaVMKeGp_NACXFI"
           />
+          <Chip
+            classNames={{
+              base: 'bg-gradient-to-br from-indigo-500 to-pink-400 border-white/50 shadow-pink-300/50',
+              content: 'drop-shadow shadow-black text-white'
+            }}
+            size="md"
+            variant="shadow"
+          >
+            Disponible para trabajar
+          </Chip>
         </div>
         <span className={title()}>Hola,&nbsp;</span>
         <span className={title()}>soy José Moreno Gómez</span>
