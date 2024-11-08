@@ -34,7 +34,7 @@ const PersonalData = () => {
           <span>
             <TypeAnimation
               className={title({ color: 'violet', fontStyle: 'italic', weight: 'bold', class: 'pr-1' })}
-              cursor={true}
+              cursor={false}
               repeat={Infinity}
               sequence={['Desarrollador Frontend', 5000]}
               wrapper="span"
