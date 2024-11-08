@@ -71,6 +71,9 @@ dependencies:
   react-router-dom:
     specifier: 6.23.0
     version: 6.23.0(react-dom@18.3.1)(react@18.3.1)
+  react-type-animation:
+    specifier: ^3.2.0
+    version: 3.2.0(prop-types@15.8.1)(react-dom@18.3.1)(react@18.3.1)
   tailwind-variants:
     specifier: 0.1.20
     version: 0.1.20(tailwindcss@3.4.3)
@@ -6507,6 +6510,18 @@ packages:
       '@babel/runtime': 7.25.7
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
+
+  /react-type-animation@3.2.0(prop-types@15.8.1)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-WXTe0i3rRNKjmggPvT5ntye1QBt0ATGbijeW6V3cQe2W0jaMABXXlPPEdtofnS9tM7wSRHchEvI9SUw+0kUohw==}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: '>= 15.0.0'
+      react-dom: '>= 15.0.0'
+    dependencies:
       prop-types: 15.8.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

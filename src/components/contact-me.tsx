@@ -21,14 +21,15 @@ const ContactMe = () => {
 
   return (
     <>
-      <Card className="max-w-[100%]">
-        <CardHeader className="flex gap-3 justify-center items-center">
+      <Card className="m-10 mt-0 max-w-[100%]">
+        <CardHeader className="flex gap-3 items-center justify-center">
           <div className="flex flex-col gap-1">
-            <h1 className="text-large font-semibold leading-none text-default-600">¿Tienes una idea? </h1>
+            <h1 className="text-xl font-bold leading-none text-default-600">¿Tienes una idea?</h1>
           </div>
         </CardHeader>
-        <CardBody className="items-center justify-center text-medium text-foreground/80">
-          <p> Contáctame para hablar sobre tu proyecto. ¡Hagámosla realidad juntos!</p>
+        <CardBody className="items-center justify-center text-center text-md text-foreground/80">
+          <p> Contáctame para hablar sobre tu proyecto.</p>
+          <p>¡Hagámosla realidad juntos!</p>
         </CardBody>
         <CardFooter className="items-center justify-center">
           <Button
