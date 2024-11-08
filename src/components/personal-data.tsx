@@ -36,7 +36,7 @@ const PersonalData = () => {
               className={title({ color: 'violet', fontStyle: 'italic', weight: 'bold', class: 'pr-1' })}
               cursor={true}
               repeat={Infinity}
-              sequence={['Desarrollador Frontend', 1000]}
+              sequence={['Desarrollador Frontend', 5000]}
               wrapper="span"
             />
           </span>
@@ -51,10 +51,6 @@ const PersonalData = () => {
         <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
           <GithubIcon size={20} />
           GitHub / JoseMG-UX
-        </Link>
-        <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
-          <GithubIcon size={20} />
-          Descargar CV
         </Link>
       </div>
     </>
