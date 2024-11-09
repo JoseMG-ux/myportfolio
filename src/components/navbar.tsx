@@ -1,15 +1,29 @@
+import { useEffect, useState } from 'react';
 import { Link } from '@nextui-org/link';
 import { Navbar as NextUINavbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar';
 import { Code, SimCardDownload } from '@mui/icons-material';
-
-import { pdfInBase64 } from '../../public/pdf/CV';
 
 import { siteConfig } from '@/config/site';
 import { ThemeSwitch } from '@/components/theme-switch';
 import { GithubIcon } from '@/components/icons';
 
 export const Navbar = () => {
-  const base64PDF = `data:application/pdf;base64,${pdfInBase64}`;
+  const [CVtxt, setCVtxt] = useState<string>('');
+
+  useEffect(() => {
+    const fetchPdfInBase64 = async () => {
+      try {
+        const response = await fetch('/myportfolio/pdf/CV.txt');
+        const text = await response.text();
+
+        setCVtxt(`data:application/pdf;base64,${text}`);
+      } catch (error) {
+        console.error('Error al cargar el archivo:', error);
+      }
+    };
+
+    fetchPdfInBase64();
+  }, []);
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -28,7 +42,7 @@ export const Navbar = () => {
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
-          <Link isExternal download="CV_JoseMorenoGomez.pdf" href={base64PDF} title="Descargar CV">
+          <Link isExternal download="CV_JoseMorenoGomez.pdf" href={CVtxt} title="Descargar CV">
             <SimCardDownload className="text-default-500" />
           </Link>
         </NavbarItem>
@@ -39,7 +53,7 @@ export const Navbar = () => {
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
-        <Link isExternal download="CV_JoseMorenoGomez.pdf" href={base64PDF} title="Descargar CV">
+        <Link isExternal download="CV_JoseMorenoGomez.pdf" href={CVtxt} title="Descargar CV">
           <SimCardDownload className="text-default-500" />
         </Link>
       </NavbarContent>
