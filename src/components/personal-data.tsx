@@ -9,7 +9,7 @@ import { GithubIcon, LinkedInIcon } from '@/components/icons';
 const PersonalData = () => {
   return (
     <>
-      <div className="m-5 inline-block max-lg text-left justify-center">
+      <div className="m-5 mb-0 inline-block max-lg text-left justify-center">
         <div className="flex gap-5 items-center mb-5">
           <Avatar
             isBordered
@@ -43,7 +43,7 @@ const PersonalData = () => {
         </div>
         <div className={subtitle({ class: 'mt-4' })}>JavaScript, TypeScript, React</div>
       </div>
-      <div className="flex flex-wrap gap-3 mb-5 mr-5 ml-5">
+      <div className="flex flex-wrap gap-3 mb-2 mr-5 ml-5">
         <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.linkedin}>
           <LinkedInIcon />
           LinkEdin / Jose Moreno Gomez

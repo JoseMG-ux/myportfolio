@@ -21,7 +21,7 @@ const ContactMe = () => {
 
   return (
     <>
-      <Card className="m-10 mt-0 max-w-[100%]">
+      <Card className="m-10 mt-0 max-w-[100%] border-none bg-background/60 dark:bg-default-100/50 max-w-[100%] shadow-md">
         <CardHeader className="flex gap-3 items-center justify-center">
           <div className="flex flex-col gap-1">
             <h1 className="text-xl font-bold leading-none text-default-600">¿Tienes una idea?</h1>
