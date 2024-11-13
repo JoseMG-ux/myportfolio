@@ -12,7 +12,7 @@ import PersonalData from '@/components/personal-data';
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className="flex flex-col items-left justify-center gap-4 py-8 md:py-10">
+      <section className="flex flex-col items-left justify-center gap-4  md:py-10">
         <PersonalData />
         <div className="container" title="exp-laboral">
           <div className="flex gap-4">

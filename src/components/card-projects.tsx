@@ -34,7 +34,7 @@ const CardProjects = ({ content_body }: { content_body: ReactNode }) => {
                     <Image
                       alt={item.title}
                       className="object-cover"
-                      loading="lazy"
+                      loading="eager"
                       src={`${item.img}?w=248&fit=crop&auto=format`}
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     />

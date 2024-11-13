@@ -9,7 +9,7 @@ import { GithubIcon, LinkedInIcon } from '@/components/icons';
 const PersonalData = () => {
   return (
     <>
-      <div className="m-5 inline-block max-lg text-left justify-center">
+      <div className="m-5 mb-0 inline-block max-lg text-left justify-center">
         <div className="flex gap-5 items-center mb-5">
           <Avatar
             isBordered
@@ -34,16 +34,16 @@ const PersonalData = () => {
           <span>
             <TypeAnimation
               className={title({ color: 'violet', fontStyle: 'italic', weight: 'bold', class: 'pr-1' })}
-              cursor={true}
+              cursor={false}
               repeat={Infinity}
-              sequence={['Desarrollador Frontend', 1000]}
+              sequence={['Desarrollador Frontend', 5000]}
               wrapper="span"
             />
           </span>
         </div>
         <div className={subtitle({ class: 'mt-4' })}>JavaScript, TypeScript, React</div>
       </div>
-      <div className="flex flex-wrap gap-3 mb-5 mr-5 ml-5">
+      <div className="flex flex-wrap gap-3 mb-2 mr-5 ml-5">
         <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.linkedin}>
           <LinkedInIcon />
           LinkEdin / Jose Moreno Gomez
@@ -51,10 +51,6 @@ const PersonalData = () => {
         <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
           <GithubIcon size={20} />
           GitHub / JoseMG-UX
-        </Link>
-        <Link isExternal className={buttonStyles({ variant: 'bordered', radius: 'full' })} href={siteConfig.links.github}>
-          <GithubIcon size={20} />
-          Descargar CV
         </Link>
       </div>
     </>
