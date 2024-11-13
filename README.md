@@ -1,50 +1,32 @@
-# Vite & NextUI Template
+# Mi portafolio 🚀
 
-This is a template for creating applications using Vite and NextUI (v2).
+Bienvenido a mi portafolio como desarrollador. Este proyecto tiene como objetivo presentar algunos de los proyectos que he desarrollado, mis habilidades técnicas, mi experiencia profesional, un poco sobre mí y una sección para contactarme.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/vite-template)
+## Tecnologías usadas 
+- **React**: Librería principal para construir la interfaz de usuario.
+- **NextUI**: Biblioteca de componentes que me permitió crear una interfaz moderna y responsiva.
+- **Tailwind CSS**: Framework de CSS para un diseño rápido y adaptado a cada dispositivo.
+- **TypeScript**: Tipado estático para una experiencia de desarrollo más robusta y mantenible.
+- **Vite**: Herramienta para el bundling y construcción de la aplicación, optimizada para rendimiento y rapidez.
 
-## Technologies Used
+## Características
+- **Diseño responsivo**: Adaptable a diferentes dispositivos (móvil, tablet, y escritorio).
+- **Interfaz moderna**: Experiencia de usuario atractiva y sencilla.
+- **Sección de proyectos**: Muestra algunos de los proyectos destacados que he realizado.
+- **Contáctame**: Formulario funcional para que los usuarios interesados puedan ponerse en contacto.
 
-- [Vite](https://vitejs.dev/guide/)
-- [NextUI](https://nextui.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+### Proximas mejoras: 
+- **Experiencia de usuario**: Mejorar las animaciones y transiciones.
+- **Más proyectos**: Agregar proyectos futuros conforme vaya desarrollando nuevas aplicaciones y sitios web.
+- **Mejoras visuales**: Incluir nuevas mejoras visuales haciendo mas atractivo e interactivo el sitio web.
 
-## How to Use
 
-To clone the project, run the following command:
+### Contribuciones
 
-```bash
-git clone https://github.com/nextui-org/vite-template.git
-```
+Este es un proyecto personal, pero cualquier sugerencia o idea de mejora es bienvenida. Puedes abrir un issue en el repositorio o contactarme directamente.
 
-### Install dependencies
+## Contacto
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/vite-template/blob/main/LICENSE).
+Puedes ponerte en contacto conmigo a través de:
+- **LinkEdin**: https://www.linkedin.com/in/jose-moreno-gomez-5009441a6/.
+- **Correo electrónico**: wdevjosemgz@gmail.com
