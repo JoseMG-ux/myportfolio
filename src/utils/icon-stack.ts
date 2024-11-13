@@ -23,7 +23,8 @@ import {
   MicrosoftAzureIcon,
   AngularIcon,
   MaterialUIIcon,
-  BitBucketIcon
+  BitBucketIcon,
+  NextUIIcon
 } from '@/components/icons';
 
 export const My_Stack = {
@@ -34,7 +35,8 @@ export const My_Stack = {
     { name: 'TypeScript', icon: TypeScriptIcon },
     { name: 'React.js', icon: ReactIcon },
     { name: 'Tailwind', icon: TailwindCSSIcon },
-    { name: 'MaterialUI', icon: MaterialUIIcon }
+    { name: 'MaterialUI', icon: MaterialUIIcon },
+    { name: 'NextUI', icon: NextUIIcon }
   ],
   backend: [
     { name: 'Next.js', icon: NextjsIcon },
