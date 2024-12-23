@@ -36,7 +36,7 @@ const ContactMe = () => {
             as={Link}
             className="inline-flex items-center justify-center py-2 mb-5 px-4 md:py-1.5 text-white transition bg-sky-500 border border-sky-500 rounded-full dark:bg-sky-500 dark:text-white focus-visible:ring-sky-600/80 text-md hover:bg-sky-600 hover:text-white dark:hover:bg-sky-600 dark:hover:text-white group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black hover:scale-105"
             color="secondary"
-            href="mailto:joseutp14@gmail.com"
+            href="mailto:wdevjosemgz@gmail.com"
             rel="noreferrer"
             startContent={<ForwardToInbox />}
             target="_blank"
