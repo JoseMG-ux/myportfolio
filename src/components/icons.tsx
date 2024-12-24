@@ -706,8 +706,8 @@ export const NextUIIcon = () => (
   </svg>
 );
 
-export const JavaIcon = () => {
-  <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 346">
+export const JavaIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" height="3em" width="3em" viewBox="0 0 256 346">
     <path
       d="M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17"
       fill="#5382A1"
@@ -719,5 +719,5 @@ export const JavaIcon = () => {
     />
     <path d="M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110" fill="#E76F00" />
     <path d="M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10" fill="#5382A1" />
-  </svg>;
-};
+  </svg>
+);
