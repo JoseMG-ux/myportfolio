@@ -75,7 +75,7 @@ export default function IndexPage() {
                   Hola, Soy <strong className="font-bold"> José Moreno Gómez</strong>, desarrollador Web. Con +2 años de experiencia en el
                   desarrollo web. <br /> Me especializo en tecnologías como <strong className="text-cyan-400">React.js</strong>,{' '}
                   <strong className="text-yellow-400">JavaScript</strong> y <strong className="text-blue-400">TypeScript</strong> para el
-                  Frontend como tambien tengo conocimientos en desarrollado Backend. <br /> Me dedico a crear soluciones de software que
+                  Frontend como también tengo conocimientos en desarrollado Backend. <br /> Me dedico a crear soluciones de software que
                   optimicen procesos y mejoren la experiencia de los usuarios. Mi enfoque está en la innovación y la eficiencia, siempre
                   buscando ofrecer resultados que generen un impacto real.
                 </p>
