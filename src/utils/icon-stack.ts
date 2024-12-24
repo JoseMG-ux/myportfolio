@@ -24,7 +24,8 @@ import {
   AngularIcon,
   MaterialUIIcon,
   BitBucketIcon,
-  NextUIIcon
+  NextUIIcon,
+  JavaIcon
 } from '@/components/icons';
 
 export const My_Stack = {
@@ -60,6 +61,7 @@ export const My_Stack = {
     { name: 'Docker', icon: DockerIcon },
     { name: 'Python', icon: PythonIcon },
     { name: 'Microsoft Azure', icon: MicrosoftAzureIcon },
-    { name: 'Angular', icon: AngularIcon }
+    { name: 'Angular', icon: AngularIcon },
+    { name: 'Java', icon: JavaIcon }
   ]
 };
