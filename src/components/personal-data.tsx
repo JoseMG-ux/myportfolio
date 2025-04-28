@@ -14,7 +14,7 @@ const PersonalData = () => {
           <Avatar
             isBordered
             className="w-20 h-20 text-large"
-            src="https://media.licdn.com/dms/image/v2/D4E03AQE-1SY9-SI55w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727794372366?e=1741824000&v=beta&t=HD4sJufYc_LlumA86BL0FB8w2jdoNRIlWf-oybnylac"
+            src="https://media.licdn.com/dms/image/v2/D4E35AQGUPHibo_ksMA/profile-framedphoto-shrink_200_200/B4EZYGY2L8G0Ac-/0/1743863899190?e=1746464400&v=beta&t=JKYEeqc5UNs_fodwIPJK5l9MKVXWXbWLQVn9qDWQNEw"
           />
           <Chip
             classNames={{
