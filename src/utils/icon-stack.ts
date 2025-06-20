@@ -25,7 +25,8 @@ import {
   MaterialUIIcon,
   BitBucketIcon,
   NextUIIcon,
-  JavaIcon
+  JavaIcon,
+  SpringIcon
 } from '@/components/icons';
 
 export const My_Stack = {
@@ -62,6 +63,7 @@ export const My_Stack = {
     { name: 'Python', icon: PythonIcon },
     { name: 'Microsoft Azure', icon: MicrosoftAzureIcon },
     { name: 'Angular', icon: AngularIcon },
-    { name: 'Java', icon: JavaIcon }
+    { name: 'Java', icon: JavaIcon },
+    { name: 'Spring', icon: SpringIcon }
   ]
 };
