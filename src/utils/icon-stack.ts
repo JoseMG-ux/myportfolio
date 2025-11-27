@@ -64,6 +64,7 @@ export const My_Stack = {
     { name: 'Microsoft Azure', icon: MicrosoftAzureIcon },
     { name: 'Angular', icon: AngularIcon },
     { name: 'Java', icon: JavaIcon },
-    { name: 'Spring', icon: SpringIcon }
+    { name: 'Spring', icon: SpringIcon },
+    { name: 'React Native', icon: ReactIcon }
   ]
 };
